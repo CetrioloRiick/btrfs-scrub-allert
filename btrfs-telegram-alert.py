@@ -1,7 +1,17 @@
+#!/usr/bin/python
 import subprocess
 import os
 import requests
+from pathlib import Path
 from dotenv import load_dotenv
+
+config_path = Path("/etc/btrfs-telegram-notifier/config.env")
+
+if config_path.exists():
+    load_dotenv(dotenv_path=config_path)
+else:
+    print(f"Config file not found at {config_path}")
+    exit(1)
 
 load_dotenv()
 TOKEN = os.getenv("TELEGRAM_TOKEN")
