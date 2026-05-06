@@ -13,7 +13,7 @@ source=('btrfs-telegram-alert.py'
         'config.env.example')
 sha256sums=('4b541626156638efd8bccb6e341cd409e5cd92d621db799c7cbee1b5161ff44f'
             'ee62a8db740b83ebd4509d0f0fce12efe8d7e180f8c3224116ca012ad9d8d891'
-            'e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855')
+            'bf5092f030a938f1a3fed3c4a3079d059772aa5a35aaef2c52c557164d800328')
 
 package() {
   install -Dm755 "${srcdir}/btrfs-telegram-alert.py" "${pkgdir}/usr/bin/btrfs-telegram-alert"
