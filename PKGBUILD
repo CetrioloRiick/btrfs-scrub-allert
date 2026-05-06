@@ -11,8 +11,9 @@ depends=('python-requests' 'python-dotenv' 'btrfsmaintenance')
 source=('btrfs-telegram-alert.py'
         'telegram-alert.conf'
         'config.env.example')
-sha256sums=('0a8d0e2a7ff8d90fdfc3f18fd436c99a8a00df0b7ee60a43a00011f064af8614'
-            'df60a2c0c76f44dda29f2a47ca0135e55af16a2290d417d9c0d9a0f495702113')
+sha256sums=('4b541626156638efd8bccb6e341cd409e5cd92d621db799c7cbee1b5161ff44f'
+            'ee62a8db740b83ebd4509d0f0fce12efe8d7e180f8c3224116ca012ad9d8d891'
+            'e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855')
 
 package() {
   install -Dm755 "${srcdir}/btrfs-telegram-alert.py" "${pkgdir}/usr/bin/btrfs-telegram-alert"
